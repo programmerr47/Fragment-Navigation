@@ -34,6 +34,7 @@ class NavigationDispatcher(
     override fun changeFragment(fragment: Fragment, backStack: Boolean) = activity.run {
         supportFragmentManager.commitTransaction {
             if (backStack) placeToBackStack()
+            setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
             replace(containerId, fragment)
         }
     }
