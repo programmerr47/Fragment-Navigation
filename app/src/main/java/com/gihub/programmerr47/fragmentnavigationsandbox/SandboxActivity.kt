@@ -10,6 +10,6 @@ class SandboxActivity : NavigationActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sandbox)
 
-        dispatcher.changeFragment(SampleFragment(), false)
+        dispatcher.changeFragment(ToolbarFragment(), false)
     }
 }
